@@ -1,0 +1,59 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    text-align: center;
+    background-image: url(./assets/backgound.jpg);
+    min-height: 100vh;
+
+    backdrop-filter: blur(100px); /* Adicione o desfoque aqui */
+}
+
+main {
+    display: inline-block;
+    margin-top: 0.5%;
+    padding: 15px;
+    position: relative;
+    z-index: 1;
+}
+
+.logo {
+    position: absolute;
+    top: 5%;
+    left: 5%;
+    height: 32.5vh;
+    width: 29.5vw;
+    background-image: url(./assets/icon.png);
+    background-size: cover;
+    z-index: 2;
+}
+
+.base {
+    position: relative;
+    height: 94vh;
+    width: 84vw;
+    text-align: center;
+    border-radius: 2%;
+    overflow: hidden;
+    background-image: url(./assets/back.jpg);
+    background-size: cover;
+    z-index: 2;
+}
+
+#videoContainer {
+    position: absolute;
+    top: 100%;
+    left: 100%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+}
+
+#videoFrame {
+    width: 560px;
+    height: 315px;
+    position: absolute;
+    z-index: 1;
+}
